@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>Form Example</title>
+<style type=text/css>
+input[type=text]    {
+                     width:20%;
+		             padding:10px 20px;
+		             margin: 10px 0;
+		             box-sizing: border-box;
+		             border:2px solid orange;
+		             border-radius:4px;
+                    }
+input[type=submit]  { color:white;
+                     padding:10px 60px;
+		             margin: 8px 0;
+        		     border-radius:40px; 
+					 background-color:red;
+		             border:5px solid orange;  font-size:20px;
+                    } 
+input[type=submit]:focus{ background-color:orange; border:3px solid red;}
+input:focus         {
+                     background-color:yellow;
+				     border:3px solid red;
+                    }
+i                   { font-size:20px; color:red; }
+h1                  {color:blue; font-family:Comic Sans MS; text-align:center;}
+.myform      { border:3px solid red;}
+</style>
+</head>
+ <body bgcolor="#CCFF66">
+ <div class="myform">
+<form method=post align=center><h1>FORM EXAMPLE</h1><hr color=red>
+<br><i>Name:</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="name" id="name" placeholder="PLEASE ENTER IN CAPITAL LETTER" required ><br>
+<i>Phone Number:</i>&nbsp;<input type="text" name="mobile" id="mobile" placeholder="PLEASE ENTER YOUR PHONE NUMBER" pattern="\d{10,}" required><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit">
+</form>
+</div>
+</body>
+</html>
